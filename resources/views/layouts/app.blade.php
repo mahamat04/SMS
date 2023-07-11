@@ -7,13 +7,16 @@
         <meta name="robots" content="noindex">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="{{asset(config('app.favicon'))}}" type="image/x-icon">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
         <title>
-            @yield('title', config('app.name', 'Skuul'))
+            @yield('title', config('app.name', 'sms'))
         </title>
         @vite('resources/css/app.css')
         <livewire:styles />
     </head>
-    <body class="font-sans">
+    <body class="font-sans text-lg">
         <a href="#main" class="sr-only">
             Skip to content
         </a>

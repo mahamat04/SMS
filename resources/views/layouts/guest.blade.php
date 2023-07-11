@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="{{asset(config('app.favicon'))}}" type="image/x-icon">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <title>
-            @yield('title', config('app.name', 'Skuul'))
+            @yield('title', config('app.name', 'SMS'))
         </title>
 
         <!-- Styles -->
@@ -14,9 +16,9 @@
         <livewire:styles />
         
         <!--Shortcut icon-->
-        <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="uy1.jpg" type="image/x-icon">
     </head>
-    <body class="bg-gray-100">
+    <body class="bg-gray-100 font-sans text-lg">
         @yield('body')
         <livewire:display-status />
     </body>

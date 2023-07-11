@@ -17,6 +17,7 @@ class Menu extends Component
                 'text'  => 'Dashboard',
                 'route' => 'dashboard',
             ],
+
             ['header' => 'Manage Profile'],
             [
                 'type'  => 'menu-item',
@@ -24,6 +25,7 @@ class Menu extends Component
                 'text'  => 'User Profile',
                 'route' => 'profile.show',
             ],
+
             ['header' => 'Multi Schools Management', 'can' => 'header-schools'],
             [
                 'type' => 'menu-item',
@@ -45,6 +47,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             ['header' => 'Administration', 'can' => 'header-administrate'],
             [
                 'type'  => 'menu-item',
@@ -53,6 +56,7 @@ class Menu extends Component
                 'route' => 'schools.settings',
                 'can'   => 'manage school settings',
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Classes',
@@ -85,6 +89,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Sections',
@@ -105,6 +110,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Students',
@@ -149,26 +155,7 @@ class Menu extends Component
                     ],
                 ],
             ],
-            [
-                'type'    => 'menu-item',
-                'text'    => 'Account Applications',
-                'icon'    => 'fas fa-plus',
-                'can'     => 'menu-account-application',
-                'submenu' => [
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View account applications',
-                        'route' => 'account-applications.index',
-                        'can'   => 'read applicant',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View rejected applications',
-                        'route' => 'account-applications.rejected-applications',
-                        'can'   => 'read applicant',
-                    ],
-                ],
-            ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Teachers',
@@ -189,6 +176,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Parents',
@@ -209,6 +197,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Admins',
@@ -229,6 +218,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Academic years',
@@ -249,6 +239,7 @@ class Menu extends Component
                     ],
                 ],
             ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Semesters',
@@ -269,50 +260,7 @@ class Menu extends Component
                     ],
                 ],
             ],
-            [
-                'type'    => 'menu-item',
-                'text'    => 'Fees',
-                'icon'    => 'fas fa-dollar',
-                'can'     => 'menu-fee',
-                'submenu' => [
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View Fee Invoices',
-                        'route' => 'fee-invoices.index',
-                        'can'   => 'read fee invoice',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'Create Fee Invoice',
-                        'route' => 'fee-invoices.create',
-                        'can'   => 'create fee invoice',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View Fees',
-                        'route' => 'fees.index',
-                        'can'   => 'read fee',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'Create Fee',
-                        'route' => 'fees.create',
-                        'can'   => 'create fee',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View Fee Categories',
-                        'route' => 'fee-categories.index',
-                        'can'   => 'read fee category',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'Create Fee Category',
-                        'route' => 'fee-categories.create',
-                        'can'   => 'create fee category',
-                    ],
-                ],
-            ],
+
             [
                 'type'    => 'menu-item',
                 'text'    => 'Subjects',
@@ -380,38 +328,7 @@ class Menu extends Component
                     ],
                 ],
             ],
-            [
-                'type'    => 'menu-item',
-                'text'    => 'Timetables',
-                'icon'    => 'fas fa-tasks',
-                'can'     => 'menu-timetable',
-                'submenu' => [
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View Timetables',
-                        'route' => 'timetables.index',
-                        'can'   => 'read timetable',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'Create Timetable',
-                        'route' => 'timetables.create',
-                        'can'   => 'create timetable',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View custom items',
-                        'route' => 'custom-timetable-items.index',
-                        'can'   => 'read custom timetable items',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'Create Custom Items',
-                        'route' => 'custom-timetable-items.create',
-                        'can'   => 'create custom timetable items',
-                    ],
-                ],
-            ],
+            
             [
                 'type'    => 'menu-item',
                 'text'    => 'Exams',
@@ -462,34 +379,7 @@ class Menu extends Component
                     ],
                 ],
             ],
-            [
-                'type'    => 'menu-item',
-                'text'    => 'Grade Systems',
-                'icon'    => 'fa fa-graduation-cap',
-                'can'     => 'menu-grade-system',
-                'submenu' => [
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'View Grading System',
-                        'route' => 'grade-systems.index',
-                        'can'   => 'read grade system',
-                    ],
-                    [
-                        'type'  => 'menu-item',
-                        'text'  => 'Create Grades',
-                        'route' => 'grade-systems.create',
-                        'can'   => 'create grade system',
-                    ],
-                ],
-            ],
-            [
-                'type'  => 'menu-item',
-                'text'  => 'View Logs',
-                'route' => 'blv.index',
-                'icon'  => 'fa fa-sticky-note',
-                //this menu item checks with roles for now so this prevents other non super users from viewing menu item
-                'can' => 'view logs',
-            ],
+
         ];
     }
 

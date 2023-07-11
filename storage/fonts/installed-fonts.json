@@ -1,5 +1,9 @@
 {
     "nunito": {
         "normal": "nunito_normal_6c0bd57bf447898b6d51683e027e0634"
+    },
+    "poppins": {
+        "normal": "C:\\Users\\smart\\Desktop\\Mahamat\\Projet Soutenance\\final\\school_management_system\\storage\\fonts\/poppins_normal_442dffd12abdf0df26c14405d3f49bfa",
+        "bold": "poppins_bold_2d1c4b360c3ac297e98fc2cfd808a2cc"
     }
 }

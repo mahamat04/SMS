@@ -2,9 +2,9 @@
     ['href'=> route('dashboard'), 'text'=> 'Dashboard', 'active'],
 ]])
 
-@section('title', __('Dashboard'))
+@section('title', __('school-management-system'))
 
-@section('page_heading', 'Dashboard')
+@section('page_heading', 'ICT SCHOOL MANAGEMENT SYSTEM (SMS)')
 
 @section('content')
 
@@ -31,12 +31,6 @@
     @livewire('list-notices-table')
 @endcan
 
-@if (auth()->user()->hasRole('applicant'))
-    @livewire('application-history', ['applicant' => auth()->user()])
-@endif
 
-@can('read applicant')
-    @livewire('list-account-applications-table')
-@endcan
 
 @endsection

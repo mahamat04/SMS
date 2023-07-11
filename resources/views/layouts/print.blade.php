@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>@yield('title')</title>
     <style>
         *{
@@ -68,7 +69,7 @@
     </style>
     @yield('style')
 </head>
-<body>
+<body class="font-sans text-lg">
     <header>
         <div class="logo-wrapper">
             <img src="{{public_path().'/'.(auth()->user()->school->logoURL ?? config('app.logo'))}}" alt="" class="logo" >

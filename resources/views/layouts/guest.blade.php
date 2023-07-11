@@ -14,6 +14,12 @@
         <!-- Styles -->
         @vite('resources/css/app.css')
         <livewire:styles />
+
+        <style>
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
         
         <!--Shortcut icon-->
         <link rel="shortcut icon" href="uy1.jpg" type="image/x-icon">

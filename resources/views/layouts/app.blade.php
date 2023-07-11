@@ -10,6 +10,12 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+        <style>
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+
         <title>
             @yield('title', config('app.name', 'sms'))
         </title>

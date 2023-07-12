@@ -22,7 +22,7 @@
     </head>
     <body>
         
-        <main class="mx-auto flex min-h-screen w-full items-center justify-center bg-gray-800 text-white">
+        <main class="mx-auto flex min-h-screen w-full items-center justify-center bg-gray-600 text-white">
             <section class="flex w-[30rem] flex-col space-y-10">
                 <div class="sm:mx-auto sm:w-full sm:max-w-sm">
                         <h2 class="mt-10 text-center text-4xl font-bold leading-9 tracking-tight my-4">Welcome to SMS</h2>
@@ -36,12 +36,14 @@
                     <div class="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500 my-4">
                         <input id="password" type="password" name="password" placeholder="Password" class="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"/>
                     </div>
+                    <button class="transform rounded-sm bg-indigo-500 py-2 font-bold duration-300 hover:bg-indigo-400 items-center" type="submit">LOG IN</button>
+                    <p></p>
                     <a href="{{route('password.request')}}" class="transform text-center font-semibold text-gray-500 duration-300 hover:text-gray-300">FORGOT PASSWORD?</a>
-                    <button class="transform rounded-sm bg-indigo-600 py-2 font-bold duration-300 hover:bg-indigo-400" type="submit">LOG IN</button>
                 </form>
             </section>
         </main>
         
     </body>    
+    
 
 </html>

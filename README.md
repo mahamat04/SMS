@@ -35,4 +35,3 @@ Les contributions sont les bienvenues! Si vous souhaitez proposer des modificati
 
 Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le redistribuer selon les termes de cette licence.
 
-Est-ce que cela répond mieux à vos attentes? Avez-vous des questions ou des préoccupations spécifiques?

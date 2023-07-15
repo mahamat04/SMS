@@ -21,7 +21,7 @@
         @vite('resources/css/app.css')
         <livewire:styles />
     </head>
-    <body class="font-sans text-lg">
+    <body class="font-sans text-lg bg-slate-100">
         <a href="#main" class="sr-only">
             Skip to content
         </a>

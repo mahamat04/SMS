@@ -1,49 +1,27 @@
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <title>
-            @yield('title', config('app.name', 'SMS'))
-        </title>
+@extends('layouts.guest')
 
-        <!-- Styles -->
-        @vite('resources/css/app.css')
-        <livewire:styles />
+@section('title', 'Login SMS')
 
-        <style>
-            * {
-                font-family: 'Poppins', sans-serif;
-            }
-        </style>
-        
-    </head>
-    <body>
-        
-        <main class="mx-auto flex min-h-screen w-full items-center justify-center bg-gray-600 text-white">
-            <section class="flex w-[30rem] flex-col space-y-10">
-                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                        <h2 class="mt-10 text-center text-4xl font-bold leading-9 tracking-tight my-4">Welcome to SMS</h2>
-                </div>
-                <div class="text-center text-4xl font-medium">Log in to your account</div>
-                <form method="POST" action="{{ route('login') }}">
-                        @csrf
-                        <div class="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500 my-4">
-                        <input id="email" type="email" name="email" placeholder="Email" class="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"/>
-                    </div>
-                    <div class="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500 my-4">
-                        <input id="password" type="password" name="password" placeholder="Password" class="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"/>
-                    </div>
-                    <button class="transform rounded-sm bg-indigo-500 py-2 font-bold duration-300 hover:bg-indigo-400 items-center" type="submit">LOG IN</button>
-                    <p></p>
-                    <a href="{{route('password.request')}}" class="transform text-center font-semibold text-gray-500 duration-300 hover:text-gray-300">FORGOT PASSWORD?</a>
-                </form>
-            </section>
-        </main>
-        
-    </body>    
-    
+@section('body')
 
-</html>
+    <x-partials.authentication-card class="my-12">
+        <form action="{{ route('login') }}" method="POST" class="px-5 md:p-5 w-full border-b-2 my-3">
+            <x-input name="email" id="email" type="email" label="Email" />
+            <x-input name="password" id="password" type="password" label="Password" />
+            <label for="remember"></label>
+            <div class="my-4">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            @csrf
+                <x-button class="my-4 px-4 md:px-10 w-full">
+                    Log in
+                </x-button>
+        </form>
+  
+        <x-slot:footer>
+            <a href="{{route('password.request')}}" class="text-blue-500" aria-label="Forgot Password">Forgot your Password?</a>
+
+        </x-slot:footer>
+    </x-partials.authentication-card>
+@endsection

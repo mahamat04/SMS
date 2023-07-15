@@ -11,10 +11,19 @@ module.exports = {
       colors: {
         'primary': '#1c64f2',
         'secondary': '#ffed4a',
+        'my-color': '#93c5fd',
       },
       fontFamily: {
         'sans': ['"Poppins"', 'sans-serif'],
       },
+    },
+    fontSize: {
+      'sm': '14px',
+      'base': '16px',
+      'lg': '18px',
+      'xl': '40px',
+      '2xl': '60px',
+      // ...
     },
   },
   plugins: [

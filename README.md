@@ -1,4 +1,4 @@
-# Mon Projet Laravel
+# School Management System
 
 Ce projet est une application web développée en utilisant le framework Laravel. Il s'inspire du dépôt GitHub suivant: https://github.com/yungifez/skuul.
 

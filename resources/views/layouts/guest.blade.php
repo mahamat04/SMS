@@ -21,7 +21,7 @@
         </style>
         
     </head>
-    <body class="bg-gray-100 font-sans text-lg">
+    <body class="bg-slate-100 font-sans text-lg">
         @yield('body')
         <livewire:display-status />
     </body>

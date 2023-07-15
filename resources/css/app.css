@@ -1,9 +1,14 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
+/* Vos styles personnalisés */ 
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer components{
     .beautify-scrollbar::-webkit-scrollbar{
@@ -36,3 +41,4 @@
     }
 
 }
+

@@ -17,14 +17,6 @@ module.exports = {
         'sans': ['"Poppins"', 'sans-serif'],
       },
     },
-    fontSize: {
-      'sm': '14px',
-      'base': '16px',
-      'lg': '18px',
-      'xl': '40px',
-      '2xl': '60px',
-      // ...
-    },
   },
   plugins: [
     require('@tailwindcss/forms'),
